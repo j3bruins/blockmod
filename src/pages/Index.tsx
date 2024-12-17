@@ -138,6 +138,8 @@ const Index = () => {
         </div>
       </section>
 
+      <HowItWorks />
+
       {/* Properties Section */}
       <section id="properties" className="py-12 px-4 bg-gray-50">
         <div className="container mx-auto">
@@ -151,8 +153,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      <HowItWorks />
     </div>
   );
 };
