@@ -16,12 +16,12 @@ export const HeroSection = () => {
       {/* Content Overlay */}
       <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
         <div className="max-w-3xl mx-auto text-white">
-          <p className="text-lg md:text-xl text-gray-100 mb-6 max-w-2xl mx-auto">
-            Invest in modular homes, apartments, and hotels with blockchain technology
+          <p className="text-lg md:text-xl text-gray-100 mb-4 max-w-2xl mx-auto">
+            Invest and develop modular homes, apartments and hotels
           </p>
-          <Button className="bg-white text-secondary hover:bg-gray-100 text-lg px-8 py-4 rounded-none">
-            INVEST NOW
-          </Button>
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white">
+            Tokenized Modular Real Estate
+          </h1>
         </div>
       </div>
     </section>
