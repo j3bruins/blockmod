@@ -54,16 +54,6 @@ export const HowItWorks = () => {
               <p className="text-gray-600">
                 {step.description}
               </p>
-              
-              {/* Connector line between steps (hidden on mobile) */}
-              {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-8 left-1/2 h-[2px] bg-primary" 
-                     style={{
-                       width: "calc(100% - 4rem)",
-                       left: `calc(50% + ${(index * 100)}% + 2rem)`,
-                       transform: "translateX(-50%)"
-                     }} />
-              )}
             </div>
           ))}
         </div>
