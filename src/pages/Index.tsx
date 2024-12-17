@@ -61,7 +61,7 @@ const properties = [
   },
   {
     title: "Contemporary Modular",
-    price: "45 Ξ",
+    price: "30 Ξ",
     image: "/lovable-uploads/9ecb3a60-8d44-4fa5-a460-f8c4fd264b48.png",
     location: "Los Angeles, CA",
     specs: {
@@ -72,7 +72,7 @@ const properties = [
   },
   {
     title: "Luxury Modular Villa",
-    price: "65 Ξ",
+    price: "30 Ξ",
     image: "/lovable-uploads/c505f4c6-cafb-44ea-9a2e-4148c65a8967.png",
     location: "Los Angeles, CA",
     specs: {
