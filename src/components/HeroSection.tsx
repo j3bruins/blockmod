@@ -2,35 +2,46 @@ import { Button } from "@/components/ui/button";
 
 export const HeroSection = () => {
   return (
-    <section className="pt-24 pb-12 px-4 md:pt-32 md:pb-20 bg-gradient-to-br from-gray-50 to-gray-100">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="text-left">
-            <h1 className="text-4xl md:text-6xl font-bold text-secondary mb-6">
-              Tokenize Modular Real Estate
-            </h1>
-            <p className="text-xl text-gray-600 mb-8">
-              Invest in modular homes, apartments, and hotels that can be placed on raw land and developed at half the cost and 2 x the speed of traditional real estate development
+    <section className="relative h-screen min-h-[600px] w-full">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src="/lovable-uploads/7e0fddf3-34a7-4461-9140-790776d8db8c.png"
+          alt="Modern Modular Building"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/40"></div>
+      </div>
+
+      {/* Content Overlay */}
+      <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
+        <div className="max-w-4xl mx-auto text-white">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+            A New Era of Real Estate Investment
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-100 mb-8 max-w-3xl mx-auto">
+            Invest in modular homes, apartments, and hotels with blockchain technology
+          </p>
+          <Button className="bg-white text-secondary hover:bg-gray-100 text-lg px-8 py-6 rounded-none">
+            INVEST NOW
+          </Button>
+        </div>
+      </div>
+
+      {/* Bottom Section */}
+      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center text-white">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 tracking-wide">
+              LEVEL-UP YOUR LEGACY
+            </h2>
+            <p className="text-xl md:text-2xl mb-4">
+              With blockchain-powered real estate investing
             </p>
-            <Button className="bg-primary text-secondary hover:bg-primary/90 text-lg px-8 py-6">
-              Explore Properties
-            </Button>
-          </div>
-          <div className="relative animate-fadeIn">
-            <div className="absolute -top-8 -left-8 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
-            <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
-            <div className="relative">
-              <img
-                src="/lovable-uploads/7e0fddf3-34a7-4461-9140-790776d8db8c.png"
-                alt="Modern Modular Building"
-                className="rounded-2xl shadow-2xl w-full object-cover h-[500px]"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
-              <div className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg">
-                <p className="text-secondary font-semibold">Featured Project</p>
-                <p className="text-gray-600">24-Unit Modular Apartment</p>
-              </div>
-            </div>
+            <p className="text-gray-300 max-w-4xl mx-auto text-lg">
+              BlockNest offers direct access to institutional-quality modular real estate investments. 
+              As a limited partner, you enjoy the benefits of blockchain technology while accessing premium real estate opportunities.
+            </p>
           </div>
         </div>
       </div>
