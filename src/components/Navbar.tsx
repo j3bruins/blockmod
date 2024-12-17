@@ -13,7 +13,7 @@ export const Navbar = () => {
     <nav className="fixed w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-4">
-          <h1 className="text-2xl font-bold text-secondary">ModularToken</h1>
+          <h1 className="text-2xl font-bold text-secondary">blocknest</h1>
         </div>
         <div className="flex items-center space-x-6">
           <a href="#properties" className="text-secondary hover:text-primary transition-colors">
