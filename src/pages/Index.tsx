@@ -36,6 +36,39 @@ const properties = [
       sqft: 28000,
     },
   },
+  {
+    title: "Modern Studio ADU",
+    price: "Starting at 25 Ξ",
+    image: "/lovable-uploads/0f56666f-ec3a-4e90-9aae-c643121aef92.png",
+    location: "Austin, TX",
+    specs: {
+      beds: 1,
+      baths: 1,
+      sqft: 400,
+    },
+  },
+  {
+    title: "Contemporary Modular",
+    price: "Starting at 45 Ξ",
+    image: "/lovable-uploads/9ecb3a60-8d44-4fa5-a460-f8c4fd264b48.png",
+    location: "Miami, FL",
+    specs: {
+      beds: 3,
+      baths: 2.5,
+      sqft: 2200,
+    },
+  },
+  {
+    title: "Luxury Modular Villa",
+    price: "Starting at 65 Ξ",
+    image: "/lovable-uploads/c505f4c6-cafb-44ea-9a2e-4148c65a8967.png",
+    location: "San Diego, CA",
+    specs: {
+      beds: 4,
+      baths: 3,
+      sqft: 2800,
+    },
+  },
 ];
 
 const Index = () => {
