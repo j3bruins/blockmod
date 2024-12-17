@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { PropertyCard } from "@/components/PropertyCard";
 import { HeroSection } from "@/components/HeroSection";
+import { HowItWorks } from "@/components/HowItWorks";
 
 const properties = [
   {
@@ -98,6 +99,7 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       <HeroSection />
+      <HowItWorks />
       
       {/* Problems We Solve Section */}
       <section className="py-16 bg-gray-50">
