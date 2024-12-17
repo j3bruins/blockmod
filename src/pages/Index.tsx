@@ -4,6 +4,17 @@ import { Button } from "@/components/ui/button";
 
 const properties = [
   {
+    title: "Luxury Boutique Hotel",
+    price: "1000 Ξ",
+    image: "/lovable-uploads/87f8d10f-b596-404f-934c-6d9132902d5e.png",
+    location: "Los Angeles, CA",
+    specs: {
+      beds: 32,
+      baths: 34,
+      sqft: 45000,
+    },
+  },
+  {
     title: "Modern Modular Home",
     price: "25 Ξ",
     image: "/lovable-uploads/cb74c199-7efe-43b3-99c5-3f5b65af4fc3.png",
@@ -78,17 +89,6 @@ const properties = [
       beds: 3,
       baths: 2,
       sqft: 1600,
-    },
-  },
-  {
-    title: "Luxury Boutique Hotel",
-    price: "1000 Ξ",
-    image: "/lovable-uploads/87f8d10f-b596-404f-934c-6d9132902d5e.png",
-    location: "Los Angeles, CA",
-    specs: {
-      beds: 32,
-      baths: 34,
-      sqft: 45000,
     },
   },
 ];

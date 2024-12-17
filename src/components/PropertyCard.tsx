@@ -16,8 +16,13 @@ interface PropertyCardProps {
 export const PropertyCard = ({ title, price, image, location, specs }: PropertyCardProps) => {
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-shadow animate-fadeIn">
-      <CardHeader className="p-0">
+      <CardHeader className="p-0 relative">
         <img src={image} alt={title} className="w-full h-64 object-cover" />
+        <div className="absolute bottom-4 right-4">
+          <Button className="bg-secondary text-white hover:bg-secondary/90">
+            Buy Now
+          </Button>
+        </div>
       </CardHeader>
       <CardContent className="p-6">
         <CardTitle className="text-xl mb-2">{title}</CardTitle>
