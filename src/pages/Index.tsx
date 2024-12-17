@@ -150,37 +150,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* About Section */}
-      <section id="about" className="py-12 px-4">
-        <div className="container mx-auto">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-secondary mb-8">
-              Why Choose Tokenized Housing?
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-              <div className="p-6 rounded-lg bg-gray-50">
-                <h3 className="font-bold text-xl mb-4">Affordable</h3>
-                <p className="text-gray-600">
-                  50% faster construction and lower costs compared to traditional housing
-                </p>
-              </div>
-              <div className="p-6 rounded-lg bg-gray-50">
-                <h3 className="font-bold text-xl mb-4">Liquid</h3>
-                <p className="text-gray-600">
-                  Easily trade your real estate tokens on the blockchain
-                </p>
-              </div>
-              <div className="p-6 rounded-lg bg-gray-50">
-                <h3 className="font-bold text-xl mb-4">Transparent</h3>
-                <p className="text-gray-600">
-                  All transactions and ownership records on the blockchain
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
