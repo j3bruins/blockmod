@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { PropertyCard } from "@/components/PropertyCard";
-import { Button } from "@/components/ui/button";
+import { HeroSection } from "@/components/HeroSection";
 
 const properties = [
   {
@@ -97,22 +97,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
+      <HeroSection />
       
-      {/* Hero Section */}
-      <section className="pt-24 pb-12 px-4 md:pt-32 md:pb-20">
-        <div className="container mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-secondary mb-6">
-            Tokenize Affordable Housing—Real-World Stability Meets the Blockchain
-          </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Invest in modular homes, apartments, and hotels at half the cost and twice the speed.
-          </p>
-          <Button className="bg-primary text-secondary hover:bg-primary/90 text-lg px-8 py-6">
-            Explore Properties
-          </Button>
-        </div>
-      </section>
-
       {/* Problems We Solve Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
