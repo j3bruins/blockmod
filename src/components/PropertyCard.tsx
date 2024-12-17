@@ -35,7 +35,7 @@ export const PropertyCard = ({ title, price, image, location, specs }: PropertyC
         </div>
       </CardContent>
       <CardFooter className="p-6 pt-0">
-        <Button className="w-full bg-secondary hover:bg-secondary/90">View Details</Button>
+        <Button className="w-full bg-secondary text-white hover:bg-secondary/90">View Details</Button>
       </CardFooter>
     </Card>
   );
