@@ -4,6 +4,17 @@ import { HeroSection } from "@/components/HeroSection";
 
 const properties = [
   {
+    title: "Modular Apartment",
+    price: "1200 Ξ",
+    image: "/lovable-uploads/7e0fddf3-34a7-4461-9140-790776d8db8c.png",
+    location: "Los Angeles, CA",
+    specs: {
+      beds: 24,
+      baths: 24,
+      sqft: 28000,
+    },
+  },
+  {
     title: "Luxury Boutique Hotel",
     price: "1000 Ξ",
     image: "/lovable-uploads/87f8d10f-b596-404f-934c-6d9132902d5e.png",
@@ -34,17 +45,6 @@ const properties = [
       beds: 2,
       baths: 2,
       sqft: 1500,
-    },
-  },
-  {
-    title: "Modular Apartment",
-    price: "1200 Ξ",
-    image: "/lovable-uploads/7e0fddf3-34a7-4461-9140-790776d8db8c.png",
-    location: "Los Angeles, CA",
-    specs: {
-      beds: 24,
-      baths: 24,
-      sqft: 28000,
     },
   },
   {
