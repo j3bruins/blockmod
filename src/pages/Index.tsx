@@ -80,6 +80,17 @@ const properties = [
       sqft: 1600,
     },
   },
+  {
+    title: "Luxury Boutique Hotel",
+    price: "1000 Ξ",
+    image: "/lovable-uploads/c31a9342-36c7-4448-9b00-b6332b9176a1.png",
+    location: "Los Angeles, CA",
+    specs: {
+      beds: 32,
+      baths: 34,
+      sqft: 45000,
+    },
+  },
 ];
 
 const Index = () => {
