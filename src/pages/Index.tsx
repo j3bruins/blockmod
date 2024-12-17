@@ -83,7 +83,7 @@ const properties = [
   {
     title: "Luxury Boutique Hotel",
     price: "1000 Ξ",
-    image: "/lovable-uploads/c31a9342-36c7-4448-9b00-b6332b9176a1.png",
+    image: "/lovable-uploads/87f8d10f-b596-404f-934c-6d9132902d5e.png",
     location: "Los Angeles, CA",
     specs: {
       beds: 32,
