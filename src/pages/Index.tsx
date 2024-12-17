@@ -204,7 +204,7 @@ const Index = () => {
           </div>
           
           <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-300">
-            <p>&copy; 2024 Modular Housing Token. All rights reserved.</p>
+            <p>&copy; 2024 blocknest. All rights reserved.</p>
           </div>
         </div>
       </footer>
