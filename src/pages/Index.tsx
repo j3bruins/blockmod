@@ -26,14 +26,14 @@ const properties = [
     },
   },
   {
-    title: "Urban Development",
-    price: "$450,000",
-    image: "/lovable-uploads/c31a9342-36c7-4448-9b00-b6332b9176a1.png",
-    location: "Austin, TX",
+    title: "Modular Apartment",
+    price: "Starting at $5,000,000",
+    image: "/lovable-uploads/7e0fddf3-34a7-4461-9140-790776d8db8c.png",
+    location: "Los Angeles, CA",
     specs: {
-      beds: 4,
-      baths: 3,
-      sqft: 2200,
+      beds: 24,
+      baths: 24,
+      sqft: 28000,
     },
   },
 ];
