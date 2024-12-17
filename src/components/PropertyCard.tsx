@@ -19,7 +19,7 @@ export const PropertyCard = ({ title, price, image, location, specs }: PropertyC
       <CardHeader className="p-0 relative">
         <img src={image} alt={title} className="w-full h-64 object-cover" />
         <div className="absolute bottom-4 right-4">
-          <Button className="bg-secondary text-white hover:bg-secondary/90">
+          <Button variant="secondary" className="bg-secondary text-white hover:bg-secondary/90">
             Buy Now
           </Button>
         </div>
