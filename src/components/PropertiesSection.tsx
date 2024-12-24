@@ -3,7 +3,7 @@ import { PropertyCard } from "@/components/PropertyCard";
 const properties = [
   {
     title: "Modular Apartment",
-    price: "1200 Sol",
+    price: "20400 Sol",
     image: "/lovable-uploads/7e0fddf3-34a7-4461-9140-790776d8db8c.png",
     location: "Los Angeles, CA",
     specs: {
@@ -14,7 +14,7 @@ const properties = [
   },
   {
     title: "Luxury Boutique Hotel",
-    price: "1000 Sol",
+    price: "17000 Sol",
     image: "/lovable-uploads/87f8d10f-b596-404f-934c-6d9132902d5e.png",
     location: "Los Angeles, CA",
     specs: {
@@ -25,7 +25,7 @@ const properties = [
   },
   {
     title: "Modern Modular Home",
-    price: "25 Sol",
+    price: "425 Sol",
     image: "/lovable-uploads/cb74c199-7efe-43b3-99c5-3f5b65af4fc3.png",
     location: "Los Angeles, CA",
     specs: {
@@ -36,7 +36,7 @@ const properties = [
   },
   {
     title: "Eco-Friendly Modular",
-    price: "30 Sol",
+    price: "510 Sol",
     image: "/lovable-uploads/b6afd4bb-8191-4e4a-a135-f940d63c9b4e.png",
     location: "Los Angeles, CA",
     specs: {
@@ -47,7 +47,7 @@ const properties = [
   },
   {
     title: "Modern Studio ADU",
-    price: "25 Sol",
+    price: "425 Sol",
     image: "/lovable-uploads/0f56666f-ec3a-4e90-9aae-c643121aef92.png",
     location: "Los Angeles, CA",
     specs: {
@@ -58,7 +58,7 @@ const properties = [
   },
   {
     title: "Contemporary Modular",
-    price: "30 Sol",
+    price: "510 Sol",
     image: "/lovable-uploads/9ecb3a60-8d44-4fa5-a460-f8c4fd264b48.png",
     location: "Los Angeles, CA",
     specs: {
@@ -69,7 +69,7 @@ const properties = [
   },
   {
     title: "Luxury Modular Villa",
-    price: "30 Sol",
+    price: "510 Sol",
     image: "/lovable-uploads/c505f4c6-cafb-44ea-9a2e-4148c65a8967.png",
     location: "Los Angeles, CA",
     specs: {
@@ -80,7 +80,7 @@ const properties = [
   },
   {
     title: "TESH Modern Home",
-    price: "35 Sol",
+    price: "595 Sol",
     image: "/lovable-uploads/50c5f233-c5dd-45a0-b942-6ae9fce3b0f8.png",
     location: "Los Angeles, CA",
     specs: {

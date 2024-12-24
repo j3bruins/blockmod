@@ -7,47 +7,47 @@ const agents = [
   {
     title: "Property Scout Agent",
     description: "Finds prime locations and off-market opportunities for modular developments",
-    price: "2.5 Sol"
+    price: "42.5 Sol"
   },
   {
     title: "Underwriting Agent",
     description: "Analyzes financial feasibility and risk assessment",
-    price: "2.0 Sol"
+    price: "34.0 Sol"
   },
   {
     title: "Disposition Agent",
     description: "Handles property sales and exit strategies",
-    price: "1.8 Sol"
+    price: "30.6 Sol"
   },
   {
     title: "Legal Agent",
     description: "Reviews contracts and ensures regulatory compliance",
-    price: "2.2 Sol"
+    price: "37.4 Sol"
   },
   {
     title: "Due Diligence Agent",
     description: "Performs comprehensive property and market analysis",
-    price: "2.1 Sol"
+    price: "35.7 Sol"
   },
   {
     title: "Insurance Agent",
     description: "Manages property insurance and risk mitigation",
-    price: "1.5 Sol"
+    price: "25.5 Sol"
   },
   {
     title: "Property Management Agent",
     description: "Oversees property operations and maintenance",
-    price: "1.7 Sol"
+    price: "28.9 Sol"
   },
   {
     title: "Lender Agent",
     description: "Sources and structures financing options",
-    price: "2.3 Sol"
+    price: "39.1 Sol"
   },
   {
     title: "Investor Relations Agent",
     description: "Manages investor communications and reporting",
-    price: "1.9 Sol"
+    price: "32.3 Sol"
   }
 ];
 
