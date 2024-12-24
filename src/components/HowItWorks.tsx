@@ -1,9 +1,8 @@
 import { 
   ClipboardCheck, 
-  Map, 
-  Home, 
-  Wallet, 
-  Truck 
+  UserCheck,
+  ScrollText,
+  Building
 } from "lucide-react";
 
 const steps = [
@@ -13,24 +12,19 @@ const steps = [
     description: "Evaluate your development and investment needs and feasibility with our in-house expert team"
   },
   {
-    icon: Map,
-    title: "Find Land",
-    description: "If you want to develop land, see fabrica.land for land options"
+    icon: UserCheck,
+    title: "Hire an AI Agent",
+    description: "Select and hire specialized AI agents to assist with your specific needs"
   },
   {
-    icon: Home,
-    title: "Select Property",
-    description: "Select your property from our curated collection"
+    icon: ScrollText,
+    title: "Select Plan",
+    description: "Choose from our curated selection of modular housing plans"
   },
   {
-    icon: Wallet,
-    title: "Purchase",
-    description: "Connect wallet and purchase property"
-  },
-  {
-    icon: Truck,
-    title: "Delivery",
-    description: "Property ships to your desired location"
+    icon: Building,
+    title: "Develop/Deploy Assets",
+    description: "Execute your plan and deploy your modular housing assets"
   }
 ];
 
@@ -42,7 +36,7 @@ export const HowItWorks = () => {
           How It Works
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
           {steps.map((step, index) => (
             <div 
               key={index} 
