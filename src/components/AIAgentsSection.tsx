@@ -95,7 +95,7 @@ const AIAgentsSection = () => {
                     className="flex items-center gap-2"
                   >
                     <UserIcon className="h-4 w-4" />
-                    Hire Agent
+                    Hire AI Agent
                   </Button>
                 </div>
               </CardContent>
