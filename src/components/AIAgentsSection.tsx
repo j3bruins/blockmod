@@ -1,178 +1,106 @@
-import { useState } from "react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
-import { Bot, Search, MapPin, Building } from "lucide-react";
+import { BriefcaseIcon, UserIcon, HelpCircleIcon, DollarSignIcon } from "lucide-react";
 
-interface Agent {
-  id: string;
-  name: string;
-  status: "idle" | "searching" | "complete";
-  results: SearchResult[];
-}
-
-interface SearchResult {
-  location: string;
-  type: string;
-  description: string;
-  confidence: number;
-}
+const agents = [
+  {
+    title: "Property Scout Agent",
+    description: "Finds prime locations and off-market opportunities for modular developments",
+    price: "2.5 Ξ"
+  },
+  {
+    title: "Underwriting Agent",
+    description: "Analyzes financial feasibility and risk assessment",
+    price: "2.0 Ξ"
+  },
+  {
+    title: "Disposition Agent",
+    description: "Handles property sales and exit strategies",
+    price: "1.8 Ξ"
+  },
+  {
+    title: "Legal Agent",
+    description: "Reviews contracts and ensures regulatory compliance",
+    price: "2.2 Ξ"
+  },
+  {
+    title: "Due Diligence Agent",
+    description: "Performs comprehensive property and market analysis",
+    price: "2.1 Ξ"
+  },
+  {
+    title: "Insurance Agent",
+    description: "Manages property insurance and risk mitigation",
+    price: "1.5 Ξ"
+  },
+  {
+    title: "Property Management Agent",
+    description: "Oversees property operations and maintenance",
+    price: "1.7 Ξ"
+  },
+  {
+    title: "Lender Agent",
+    description: "Sources and structures financing options",
+    price: "2.3 Ξ"
+  },
+  {
+    title: "Investor Relations Agent",
+    description: "Manages investor communications and reporting",
+    price: "1.9 Ξ"
+  }
+];
 
 const AIAgentsSection = () => {
-  const [agents, setAgents] = useState<Agent[]>([]);
-  const [newAgentName, setNewAgentName] = useState("");
   const { toast } = useToast();
 
-  const createAgent = async () => {
-    if (!newAgentName.trim()) {
-      toast({
-        title: "Error",
-        description: "Please enter a name for your agent",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    const newAgent: Agent = {
-      id: Date.now().toString(),
-      name: newAgentName,
-      status: "idle",
-      results: [],
-    };
-
-    setAgents([...agents, newAgent]);
-    setNewAgentName("");
-    
+  const handleHireAgent = (agentTitle: string) => {
     toast({
-      title: "Agent Created",
-      description: `${newAgentName} is ready to search for properties`,
+      title: "Agent Hired!",
+      description: `You've successfully hired the ${agentTitle}. They will contact you shortly.`,
     });
   };
 
-  const deployAgent = async (agentId: string) => {
-    setAgents(agents.map(agent => 
-      agent.id === agentId 
-        ? { ...agent, status: "searching" }
-        : agent
-    ));
-
-    // Simulate AI search process
-    setTimeout(() => {
-      setAgents(agents.map(agent => 
-        agent.id === agentId 
-          ? {
-              ...agent,
-              status: "complete",
-              results: [
-                {
-                  location: "Austin, TX",
-                  type: "Commercial Land",
-                  description: "5 acre plot in tech corridor",
-                  confidence: 0.89,
-                },
-                {
-                  location: "Denver, CO",
-                  type: "Mixed-Use Development",
-                  description: "Urban renewal zone, transit-oriented",
-                  confidence: 0.92,
-                },
-              ],
-            }
-          : agent
-      ));
-
-      toast({
-        title: "Search Complete",
-        description: "Your agent has found potential development locations",
-      });
-    }, 3000);
-  };
-
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-secondary mb-4">
-            AI Property Scouts
-          </h2>
+          <div className="flex justify-center mb-4">
+            <HelpCircleIcon className="h-12 w-12 text-primary" />
+          </div>
+          <h2 className="text-3xl font-bold mb-4">Need Help? Hire an AI Agent</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Deploy AI agents to discover prime locations for modular developments. 
-            Our agents analyze market data, zoning laws, and development potential 
-            to find the perfect spots for your next project.
+            Our specialized AI agents are here to assist you with every aspect of your modular housing investment journey.
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="flex gap-4 mb-8">
-            <Input
-              placeholder="Enter agent name..."
-              value={newAgentName}
-              onChange={(e) => setNewAgentName(e.target.value)}
-              className="flex-1"
-            />
-            <Button onClick={createAgent}>
-              <Bot className="mr-2 h-4 w-4" />
-              Create Agent
-            </Button>
-          </div>
-
-          <div className="space-y-4">
-            {agents.map((agent) => (
-              <div
-                key={agent.id}
-                className="border rounded-lg p-6 bg-gray-50"
-              >
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-2">
-                    <Bot className="h-5 w-5 text-primary" />
-                    <h3 className="text-lg font-semibold">{agent.name}</h3>
-                    <span className={`px-2 py-1 rounded-full text-xs ${
-                      agent.status === "idle" ? "bg-gray-200" :
-                      agent.status === "searching" ? "bg-blue-100 text-blue-700" :
-                      "bg-green-100 text-green-700"
-                    }`}>
-                      {agent.status}
-                    </span>
-                  </div>
-                  {agent.status === "idle" && (
-                    <Button
-                      variant="outline"
-                      onClick={() => deployAgent(agent.id)}
-                    >
-                      <Search className="mr-2 h-4 w-4" />
-                      Deploy Agent
-                    </Button>
-                  )}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {agents.map((agent, index) => (
+            <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+              <CardHeader>
+                <div className="flex items-center gap-2 mb-2">
+                  <BriefcaseIcon className="h-5 w-5 text-primary" />
+                  <CardTitle className="text-xl">{agent.title}</CardTitle>
                 </div>
-
-                {agent.results.length > 0 && (
-                  <div className="space-y-3">
-                    {agent.results.map((result, index) => (
-                      <div
-                        key={index}
-                        className="bg-white p-4 rounded-md border"
-                      >
-                        <div className="flex items-start gap-3">
-                          <MapPin className="h-5 w-5 text-primary mt-1" />
-                          <div>
-                            <div className="flex items-center gap-2">
-                              <h4 className="font-medium">{result.location}</h4>
-                              <span className="text-sm text-gray-500">
-                                {(result.confidence * 100).toFixed(0)}% match
-                              </span>
-                            </div>
-                            <p className="text-sm text-gray-600">
-                              {result.type} - {result.description}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
+                <CardDescription>{agent.description}</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex justify-between items-center">
+                  <div className="flex items-center gap-1">
+                    <DollarSignIcon className="h-4 w-4 text-gray-600" />
+                    <span className="font-semibold">{agent.price}</span>
                   </div>
-                )}
-              </div>
-            ))}
-          </div>
+                  <Button 
+                    onClick={() => handleHireAgent(agent.title)}
+                    className="flex items-center gap-2"
+                  >
+                    <UserIcon className="h-4 w-4" />
+                    Hire Agent
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
