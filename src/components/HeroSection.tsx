@@ -22,9 +22,6 @@ export const HeroSection = () => {
           <p className="text-xl md:text-2xl font-semibold text-white mb-8 max-w-2xl mx-auto drop-shadow-lg">
             Invest and develop modular homes, apartments and hotels in the city of tomorrow
           </p>
-          <Button className="bg-primary/90 hover:bg-primary text-white text-lg px-8 py-6 rounded-full transition-all duration-300 transform hover:scale-105">
-            Explore Properties
-          </Button>
         </div>
       </div>
     </section>
