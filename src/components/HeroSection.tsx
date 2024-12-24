@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export const HeroSection = () => {
   return (
-    <section className="relative h-[80vh] min-h-[600px] w-full overflow-hidden">
+    <section className="relative h-[40vh] min-h-[300px] w-full overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
