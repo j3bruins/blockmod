@@ -19,7 +19,7 @@ export const HeroSection = () => {
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80 animate-fadeIn">
             Tokenized Modular Real Estate
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl font-semibold text-white mb-8 max-w-2xl mx-auto drop-shadow-lg">
             Invest and develop modular homes, apartments and hotels in the city of tomorrow
           </p>
           <Button className="bg-primary/90 hover:bg-primary text-white text-lg px-8 py-6 rounded-full transition-all duration-300 transform hover:scale-105">
